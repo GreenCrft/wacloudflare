@@ -6,30 +6,37 @@ export default {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- OG Tags -->
+  <!-- OG Meta -->
   <meta property="og:title" content="Owner SpielNetwork" />
   <meta property="og:description" content="Hi, I'm SpielNetwork Owner, click the link if u want to talk with me" />
   <meta property="og:image" content="https://i.imgur.com/C3Its49.jpeg" />
   <meta property="og:url" content="https://wa.spaceship.com" />
-  <meta name="theme-color" content="#25D366" />
+  <meta name="theme-color" content="#121212" />
 
-  <!-- Redirect -->
-  <meta http-equiv="refresh" content="2; url=https://wa.me/6285813087161" />
+  <!-- Redirect dalam 4 detik -->
+  <meta http-equiv="refresh" content="4; url=https://wa.me/6285813087161" />
   <title>Menghubungkan ke Green...</title>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
       width: 100%;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Poppins', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(270deg, #25D366, #ff5e62, #ffc371, #25D366);
+      background: linear-gradient(270deg, #1a1a2e, #16213e, #0f3460, #1a1a2e);
       background-size: 800% 800%;
-      animation: rainbow 10s ease infinite;
+      animation: rainbow 12s ease infinite;
     }
 
     @keyframes rainbow {
@@ -38,41 +45,34 @@ export default {
       100% { background-position: 0% 50%; }
     }
 
-    .text {
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 30px 50px;
-      border-radius: 15px;
-      font-size: 1.8rem;
-      box-shadow: 0 0 20px #25D366;
+    .card {
+      background-color: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(12px);
+      color: #ffffff;
+      padding: 40px 60px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      max-width: 90%;
+    }
+
+    .title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 12px;
     }
 
     .dots {
-      margin-top: 10px;
-      font-weight: bold;
+      font-size: 1.4rem;
+      font-weight: 400;
       font-family: monospace;
-      font-size: 1.5rem;
-      animation: loadingDots 1.5s infinite steps(6);
       white-space: pre;
-    }
-
-    @keyframes loadingDots {
-      0%   { content: ".  "; }
-      20%  { content: ". . "; }
-      40%  { content: ". . ."; }
-      60%  { content: " . . "; }
-      80%  { content: "  . "; }
-      100% { content: ".  "; }
     }
   </style>
 </head>
 <body>
-  <div class="text">
-    Menghubungkan ke Green
+  <div class="card">
+    <div class="title">Menghubungkan ke Green</div>
     <div class="dots" id="dots">.  </div>
   </div>
 
@@ -89,7 +89,7 @@ export default {
       status: 200,
       headers: {
         "content-type": "text/html; charset=utf-8",
-        "cache-control": "public, max-age=3600"
+        "cache-control": "no-store"
       }
     });
   }
