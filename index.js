@@ -8,8 +8,8 @@ export default {
 
     <meta property="og:title" content="Owner SpielNetwork" />
     <meta property="og:description" content="Hi, Im SpielNetwork Owner, click the link if u want to talk with me" />
-    <meta property="og:image" content="https://i.ibb.co/Lzrgm0gT/20250305-084329.jpg" />
-    <meta property="og:url" content="https://wa.spaceship.com" />
+    <meta property="og:image" content="https://i.imgur.com/C3Its49.jpeg" />
+    <meta property="og:url" content="https://greenc.store" />
     <meta name="theme-color" content="#25D366" />
 
     <title>Redirecting to WhatsApp...</title>
@@ -20,7 +20,7 @@ export default {
     </script>
   </head>
   <body>
-    <p>Redirecting to WhatsApp...</p>
+    <p>Menghubungkan ke WhatsApp Green...</p>
   </body>
 </html>`, {
       headers: {
